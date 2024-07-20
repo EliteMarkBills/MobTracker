@@ -52,7 +52,14 @@ label {
   -webkit-user-select: none; /* ラベルのテキスト選択を無効化する */
   user-select: none;
 }
-
+.MobNameContainer {
+  display: flex;
+  flex-direction: column;
+}
+.MobAreaContainer {
+  display: flex;
+  flex-direction: column;
+}
 .MobNameJP {
 /* <uniquifier>: Use a unique and descriptive class name */
 /* <weight>: Use a value from 100 to 900 */
@@ -103,10 +110,14 @@ label {
 
 <label>
 <input id="MobCB001" type="checkbox" name="ARR" value="001">
+<span class="MobNameContainer">
 <span class="MobNameJP MobName MobJP">スコッグ・フリュー</span>
-<span class="MobAreaJP MobArea MobJP">中央ラノシア</span>
 <span class="MobNameEN MobName MobEN">Skogs Fru</span>
+</span>
+<span class="MobAreaContainer">
+<span class="MobAreaJP MobArea MobJP">中央ラノシア</span>
 <span class="MobAreaEN MobArea MobEN">Middle La Noscea</span>
+</span>
 <span class="MobDrawing"><img src="./img/001t.png" class="ImgDrawing"></span>
 </label>
 
