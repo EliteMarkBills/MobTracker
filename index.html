@@ -33,7 +33,7 @@ input[type=checkbox] {
 	padding: 0;
 	height: o;
 }
-input[type=checkbox] + label {
+input[type=checkbox]:not(:checked) ~ span > img  {
 	filter: grayscale(100%);
 } 
 input[type=checkbox]:checked + label {
