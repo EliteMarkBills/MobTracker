@@ -33,12 +33,19 @@ input[type=checkbox] {
 	padding: 0;
 	height: o;
 }
+
+/* checkboxが非チェック時にフィルターを掛ける*/
 input[type=checkbox]:not(:checked) ~ span > img  {
-	filter: grayscale(100%);
-} 
+	/*filter: grayscale(100%);/* */
+	filter: sepia(100%);/* */
+}
+/* checkboxがチェック時にフィルターを解除する*/
 input[type=checkbox]:checked ~ span > img {
 	filter: grayscale(0%);
-} 
+	filter: sepia(0%);
+}
+
+
 label {
 	display: block; /* ブロックレベル要素化する */
 	/*　float: left;  要素の左寄せ・回り込を指定する */
@@ -128,9 +135,15 @@ label {
 }
 
 .ImgDrawing {
+	/* Device Pixcel Ratio x2 */
 	height: 132px;
-	width: 192px;
+	width: 192px;/* */
+
+	/* Device Pixcel Ratio x3 */
+	/*height: 88px;
+	width: 128px;/* */
 }
+
 </style>
 
 </head>
