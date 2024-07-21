@@ -56,6 +56,10 @@ label {
   display: flex;
   flex-direction: row;
 }
+.MobTextContainer {
+  display: flex;
+  flex-direction: column;
+}
 .MobNameContainer {
   display: flex;
   flex-direction: row;
@@ -123,13 +127,15 @@ label {
 <label>
 <input id="MobCB001" type="checkbox" name="ARR" value="001">
 <span class="MobContainer">
-  <span class="MobNameContainer">
-    <span class="MobNameJP MobName MobJP">スコッグ・フリュー</span>
-    <span class="MobNameEN MobName MobEN">Skogs Fru</span>
-  </span>
-  <span class="MobAreaContainer">
-    <span class="MobAreaJP MobArea MobJP">中央ラノシア</span>
-    <span class="MobAreaEN MobArea MobEN">Middle La Noscea</span>
+	<span class="MobTextContainer">
+  	<span class="MobNameContainer">
+    	<span class="MobNameJP MobName MobJP">スコッグ・フリュー</span>
+    	<span class="MobNameEN MobName MobEN">Skogs Fru</span>
+  	</span>
+    <span class="MobAreaContainer">
+      <span class="MobAreaJP MobArea MobJP">中央ラノシア</span>
+      <span class="MobAreaEN MobArea MobEN">Middle La Noscea</span>
+    </span>
   </span>
   <span class="MobDrawing"><img src="./img/001t.png" class="ImgDrawing"></span>
 </span>
