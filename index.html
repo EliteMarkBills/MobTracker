@@ -26,9 +26,14 @@
 
 /* checkboxを非表示にする */
 input[type=checkbox] {
-	display: none;
+	appearance: none;
+}
+input[type=checkbox] + label img {
+	filter: grayscale(100%);
 } 
-
+input[type=checkbox]:checked + label img {
+	filter: grayscale(0%);
+} 
 label {
 	display: block; /* ブロックレベル要素化する */
 	/*　float: left;  要素の左寄せ・回り込を指定する */
